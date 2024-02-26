@@ -20,12 +20,16 @@
 
 <body>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Serif:opsz@8..144&display=swap');
-        * {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Poppins&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+      * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;            color: #4ebd57
+            font-family: 'Poppins', sans-serif;   
+                     color: #4ebd57
 #b452b5
 #ed7ab7;
         }
@@ -38,6 +42,8 @@
 .banner_text_animation_box{
     opacity: 1;
   animation: fadeIn 3s ease-in-out forwards;
+
+ 
 }
 
 
@@ -45,7 +51,7 @@
   0% {
     opacity: 0;
     transform: translateY(-50px);
-  }
+  },
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -53,49 +59,96 @@
 }
 
 
+.banner_text_container{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: url(https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/decorationimage_prev_ui_1_ZMu.png);
+ background-position: top right;
+ background-size: 270px;
+ background-repeat: no-repeat;
+ display: flex;align-items: center;
+}
+.butterfly_decoration_image2{
+position: absolute;
+bottom: 5%;
+width: 150px;
+height: auto;
+right: 2%;
 
+}
+.butterfly_decoration_image2 img {
+    width: 100%;
+    object-fit: cover;
+
+}
         .banner_contianer {
-            background-image: url('https://firstsight.design/cherie/beauty/wp-content/uploads/2023/04/cheroooo-scaled.jpg');
-            background-position: bottom;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            letter-spacing: 4px;
-            backdrop-filter: 50%;
-            font-weight: 600;
-            flex-direction: column;
-            gap: 1.5rem;          
-            background-attachment: fixed;
-            position: relative;
+         background: linear-gradient(90deg,#fff,#ffc8a6,#ffc8a6);
             height: 55vh;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
         }
         .banner_text_animation_box{
-width:  50%;
+width:  100%;
 text-align: center;
 display: flex;
 flex-direction: column;
 align-items: center;
 gap: 2rem;
+justify-content: center;
         }
+        .bannerImage_wrapper{
+            position: relative;
+            width: 50%;
+            height: 95%;
+            display: flex;
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/rightimage2_prev_ui.png);
+    background-position: bottom left;
+    background-size: 25%;
+    background-repeat: no-repeat;
+        }
+        .bannerimage_container {
+    width: 50%;
+    height: auto;
+    border-radius: 0% 37%;
+    
+    
+}
+.butterfly_decoration_image{
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 3%;
+    right: 0;
+}
+.butterfly_decoration_image img{
+    width:100% ;
+    rotate: 345deg;
+}
 
         .banner-text_section {
             text-transform: capitalize;
             opacity: 50000;
-            color: #ffff;
-            font-family: 'EB Garamond', serif !important;
+            color: #fff;
+            font-family: 'Lobster',sans-serif !important;
             font-size: 6rem;
-            font-weight: 400;
+            font-weight: 100 !important;
+            text-shadow: 1px 0px 1px;
         }
         .banner_text_second {
-            font-size: 2.5rem;
-            letter-spacing: 1px;
-            font-family: 'EB Garamond', serif !important;
+            font-size: 2rem;
+            /* letter-spacing: 1px; */font-weight: 600;
+            font-family: "Noto Sans", sans-serif !important;
         }
         .book_buuton{
-            color: #841185;
+            color: #f94b00;
             background-color: #fff;
+            font-family: "Noto Sans", sans-serif !important;
+
             letter-spacing: normal;
             font-weight: 800;
             padding: 0.5rem 3rem;
@@ -108,7 +161,7 @@ text-transform: uppercase;
             position: absolute;
             bottom: 0;
             width: 100%;
-            background-color: #7b247d;
+            background-color: #f94b00;
             text-align: center;
             padding: 0.5rem;
             letter-spacing: 1px;
@@ -361,10 +414,24 @@ padding: 1rem;
     </style>
    
         <div class="banner_contianer">
-            <div class="banner_text_animation_box">
-                <div class="banner-text_section">Welcome to ISeva Beauty</div>
-                <div class="banner_text_second"> Experience the ultimate med spa treatments </div>
-                <div class="book_buuton">Book an Appointment</div>
+            <div class="bannerImage_wrapper">
+                <div class="bannerimage_container"> 
+                 <img src="https://media.istockphoto.com/id/1996005843/photo/side-view-indian-woman-applying-facial-clay-mask-at-spa.jpg?s=2048x2048&w=is&k=20&c=WhjzaalV20GHETlRxYSBx5Qzx25N7ltzoGx4PMbaBtE=" width="100%"  style="object-fit: cover;border-radius: inherit;border-left: 5px solid #4ebd57;border-bottom:1px solid #4ebd57;
+                 " alt="">
+                </div>
+                <div class="butterfly_decoration_image">
+                    <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/butterfly_prev_ui.png" alt="" srcset="">
+                </div>
+            </div>
+            <div class="banner_text_container">
+                <div class="banner_text_animation_box">
+                    <div class="banner-text_section">Welcome to ISeva Beauty</div>
+                    <div class="banner_text_second"> Experience the ultimate med spa treatments </div>
+                    <div class="book_buuton">Book an Appointment</div>
+                </div>
+                <div class="butterfly_decoration_image2">
+                    <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/butterfly_prev_ui.png" alt="" srcset="">
+                </div>
             </div>
 
             <div class="banner_bottom_strip">Your Premier Med Spa In Lake Charles</div>
