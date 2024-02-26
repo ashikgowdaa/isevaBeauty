@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coustard&family=Dancing+Script:wght@700&family=EB+Garamond&family=Montserrat:wght@600&family=Open+Sans&family=Poppins&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coustard&family=EB+Garamond&family=Montserrat:wght@600&family=Open+Sans&family=Poppins&family=Quicksand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Serif:opsz@8..144&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;            color: #4ebd57
+#b452b5
+#ed7ab7;
+        }
+
+
+
+
+        /* animation for text without using javascript */
+
+.banner_text_animation_box{
+    opacity: 1;
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+        .banner_contianer {
+            background-image: url('https://firstsight.design/cherie/beauty/wp-content/uploads/2023/04/cheroooo-scaled.jpg');
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 4px;
+            backdrop-filter: 50%;
+            font-weight: 600;
+            flex-direction: column;
+            gap: 1.5rem;          
+            background-attachment: fixed;
+            position: relative;
+            height: 55vh;
+        }
+        .banner_text_animation_box{
+width:  50%;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2rem;
+        }
+
+        .banner-text_section {
+            text-transform: capitalize;
+            opacity: 50000;
+            color: #ffff;
+            font-family: 'EB Garamond', serif !important;
+            font-size: 6rem;
+            font-weight: 400;
+        }
+        .banner_text_second {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            font-family: 'EB Garamond', serif !important;
+        }
+        .book_buuton{
+            color: #841185;
+            background-color: #fff;
+            letter-spacing: normal;
+            font-weight: 800;
+            padding: 0.5rem 3rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1.5rem;     
+text-transform: uppercase;
+        }
+        .banner_bottom_strip{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #7b247d;
+            text-align: center;
+            padding: 0.5rem;
+            letter-spacing: 1px;
+            font-weight: 500;
+            font-family: 'EB Garamond', serif !important;
+            font-size: 1.5rem;
+color: #fff;
+        }
+        .services_main_wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 1rem 0rem;
+        }
+        .services_container{
+            width: 100%;
+            /* max-width: 1300px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:3rem ;
+            flex-direction: column;
+            padding-bottom: 5rem ;
+        }
+        .service_heading{
+            font-size: 4rem;
+            font-weight: 700;
+            color: #7b247d;
+            font-family: 'EB Garamond', serif !important;
+            width: 100%;
+            text-align: center;
+        }  
+          .heading_section{
+            font-size: 3rem;
+            font-weight: 700;
+            color: #7b247d;
+            font-family: 'EB Garamond', serif !important;
+            background-color: #7b247d;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0rem;
+        }
+        .service_second_heading{
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: 'EB Garamond', serif !important;
+
+        } 
+        .image_container img {
+            width: 100%;
+            height: 100%;
+        }
+        .service_content_container{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 1rem;
+        }
+        .indi_service_image_container{
+            height: 350px;
+            width: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        border:4px solid #ed7ab7;
+            border-radius: 0 35%;
+            object-fit: contain;
+            position: relative;
+            cursor: pointer;
+        }
+        .service_name_container{
+            position: absolute;
+            bottom: 0;
+            background: #7b247d;
+            width: 65%;
+            color: #fff;
+            border: 1px solid #ed7ab7 ;
+            right: 0;
+            border-radius: 40px 0 0 40px;
+            padding: 1rem;
+            font-size: 1.3rem;
+        }
+        .overlay{
+            position: absolute;
+            top: 50%;
+            height: 0%;
+            width: 100%;
+            background-color: #4ebd57;
+            border-radius: 0 35%;
+            /* display: none; */
+            transition: all 1s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button_overlay{
+            display: none;
+             height: 50px;
+             width: 150px;
+             background-color: #ffff;
+            color: #7b247d;
+        transition: all 2s ease-in-out;
+        font-weight: 600;
+              }
+              .indi_service_image_container:hover .overlay{
+                  height: 100%;
+                  width: 100%;
+                  top: 0%;
+              }
+
+        .indi_service_image_container:hover .button_overlay{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+          }
+
+        .indi_service_image_container img {
+            width: auto;
+            height: auto;
+        }
+.service_description_section{
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+        .book_image_main_wrapper{
+            background: url('https://bracketweb.com/soloxwp/wp-content/uploads/2023/09/slider-2-1.jpg');
+            background-position: bottom;
+            background-attachment: fixed;
+            height: 450px;
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: cover;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .inner_content{
+            width: 50%;
+            text-align: center;
+            color: #000;
+            font-size: 2rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #ed7ab73a;
+            height: 100%;
+padding: 1rem;
+        }
+        .choose_main_wrapper{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 1rem;
+        }
+        .choose_main_container{
+            width: 100%;
+            display: flex;
+            /* background: linear-gradient(45deg, #ed7ab7, hsl(330, 86%, 91%));       */
+        flex-direction: column-reverse; 
+    align-items: center; 
+    gap: 1rem;
+    padding: 5rem 0rem;
+}
+        .first_section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.56rem;
+    font-weight: 600;
+}
+        .second_section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .second_section img {
+            width: 600;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Gallery Coro container */
+          /* Slider container */
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Slider wrapper */
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Individual slide */
+  .slide {
+    flex: 0 0 100%; /* Set slides to be the same width as the container */
+    padding: 0rem 2rem;
+  }
+  
+  /* Slide images */
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0 20% !important;
+  }
+  
+  /* Animation */
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    14.28% { transform: translateX(0);
+     }
+    28.57% { transform: translateX(-100%); }
+    42.84% { transform: translateX(-100%); }
+    57.12% { transform: translateX(-200%); }
+    71.40% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Auto play */
+  .slider-wrapper {
+    animation: slide 16s infinite;
+    margin: 1rem 0rem ;
+  }
+  .slide{
+    display: flex;
+    height: 480px;
+    gap: 1rem;
+    
+  }
+  .slide img {
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+  }
+    </style>
+   
+        <div class="banner_contianer">
+            <div class="banner_text_animation_box">
+                <div class="banner-text_section">Welcome to ISeva Beauty</div>
+                <div class="banner_text_second"> Experience the ultimate med spa treatments </div>
+                <div class="book_buuton">Book an Appointment</div>
+            </div>
+
+            <div class="banner_bottom_strip">Your Premier Med Spa In Lake Charles</div>
+        </div>
+        <div class="services_main_wrapper">
+            <div class="services_container">
+                <div class="service_heading">Our Services</div>
+                <div class="service_second_heading">Discover A Wide Range Of Spa Treatments And Services</div>
+                <div class="service_description_section" >Step into our peaceful and welcoming atmosphere, where we offer a diverse array of spa treatments to enhance your natural beauty. From makeup application and eyebrow shaping to professional waxing and luxurious spa treatments, we have it all. Our expert staff is here to pamper you and ensure you leave feeling refreshed and rejuvenated.</div>
+                <div class="service_content_container">
+                <div class="indi_service_image_container">
+                    <img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/eea047052cb3431289aa969c45a30f53/1/4SoifmQpDrHbZJ6VvdPAk/icon2.png" alt="">
+<div class="service_name_container">
+    Facial
+</div>
+<div class="overlay">
+    <div class="button_overlay">Learn More</div>
+</div>
+                </div> 
+                <div class="indi_service_image_container"><img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/eea047052cb3431289aa969c45a30f53/1/4SoifmQpDrHbZJ6VvdPAk/icon2.png" alt="">
+                    <div class="service_name_container">
+                        Facial
+                    </div>
+                    <div class="overlay">
+                        <div class="button_overlay">Learn More</div>
+                    </div>
+                </div> 
+                <div class="indi_service_image_container"><img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/eea047052cb3431289aa969c45a30f53/1/4SoifmQpDrHbZJ6VvdPAk/icon2.png" alt="">
+                    <div class="service_name_container">
+                        Facial
+                    </div>
+                    <div class="overlay">
+                        <div class="button_overlay">Learn More</div>
+                    </div>
+                </div> 
+                <div class="indi_service_image_container"><img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/eea047052cb3431289aa969c45a30f53/1/4SoifmQpDrHbZJ6VvdPAk/icon2.png" alt="">
+                    <div class="service_name_container">
+                        Facial
+                    </div>
+                    <div class="overlay">
+                        <div class="button_overlay">Learn More</div>
+                    </div>
+                </div> 
+                <div class="indi_service_image_container"><img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/eea047052cb3431289aa969c45a30f53/1/4SoifmQpDrHbZJ6VvdPAk/icon2.png" alt="">
+                
+                    <div class="service_name_container">
+                        Facial
+                    </div>
+                    <div class="overlay">
+                        <div class="button_overlay">Learn More</div>
+                    </div>
+                </div> 
+                <div class="indi_service_image_container"><img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/eea047052cb3431289aa969c45a30f53/1/4SoifmQpDrHbZJ6VvdPAk/icon2.png" alt="">
+                
+                    <div class="service_name_container">
+                        Facial
+                    </div>
+                    <div class="overlay">
+                        <div class="button_overlay">Learn More</div>
+                    </div>
+                </div> 
+                </div>
+              
+            </div>
+        </div>
+<div class="book_image_main_wrapper">
+    <div class="inner_content">
+        <div class="">Convenience And Self-Care Combined</div>
+        <div class="">We understand how busy life can get, which is why we are conveniently located inside Walmart in Lake Charles. You can now run your errands and enjoy some much-needed self-care in one trip. Take advantage of our convenient location to prioritize your beauty needs and indulge in a little self-care.</div>
+        <div class="book_buuton">Book an Appointment</div>
+    </div>
+
+</div>
+<div class="choose_main_wrapper">
+    <div class="heading_section">Why Choose Us?</div>
+    <div class="choose_main_container">
+<div class="first_section">
+    At Shubh Beauty, our team is dedicated to providing you with the best med spa experience in Lake Charles. With our range of services and convenient location inside Walmart, we are your one-stop destination for all your beauty needs. Book an appointment today or stop in while you are doing your shopping! Walk-ins are always welcome!
+</div>
+<div class="second_section">
+    <img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/f83a3cb7117c42008b0d5860275d16f1/1/4SoifmQp45JMgBnHmBMTz/trustbadges.png"  alt="">
+</div>
+    </div>
+
+
+    <div class="slider-container">
+        <div class="heading_section">Our Gallery</div>
+
+        <div class="slider-wrapper">
+          <!-- Slides -->
+          <div class="slide">
+      <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img6.jpg"alt="Image 1">
+
+      <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/h.jpg"alt="Image 1">
+
+      <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img03.jpg"alt="Image 1">
+
+      <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img1.jpg"alt="Image 1">
+          </div>
+          <div class="slide">
+              <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img2.jpg"alt="Image 1">
+
+              <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/h.jpg"alt="Image 1">
+
+              <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img03.jpg"alt="Image 1">
+        
+              <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img1.jpg"alt="Image 1"> 
+              </div>
+      
+          <!-- Add more slides as needed -->
+          <div class="slide">
+            <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img6.jpg"alt="Image 1">
+      <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/h.jpg"alt="Image 1">
+
+      <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img03.jpg"alt="Image 1">
+
+      <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img1.jpg"alt="Image 1">
+            </div>
+        </div>
+      </div>
+</body>
+
+</html>
