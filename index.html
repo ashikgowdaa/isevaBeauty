@@ -38,7 +38,7 @@
         .banner_text_animation_box {
             opacity: 1;
             animation: fadeIn 3s ease-in-out forwards;
-
+z-index: 999;
 
         }
 
@@ -86,7 +86,7 @@
 
         .banner_contianer {
             background: linear-gradient(90deg, #fff, #ffc8a6, #ffc8a6);
-            height: 55vh;
+            height: 65vh;
             display: flex;
             justify-content: space-around;
             position: relative;
@@ -98,7 +98,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 2rem;
+            gap: 1.5rem;
             justify-content: center;
         }
 
@@ -112,7 +112,7 @@
             align-items: center;
             background-image: url(https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/flowerbg.png);
             background-position: bottom left;
-            background-size: 40%;
+            background-size: 37%;
             background-repeat: no-repeat;
         }
 
@@ -142,9 +142,9 @@
             opacity: 50000;
             color: #fff;
             font-family: 'Lobster', sans-serif !important;
-            font-size: 6rem;
+            font-size: 4rem;
             font-weight: 100 !important;
-            text-shadow: 1px 0px 1px;
+            text-shadow: 4px 2px 3px #f94b00;
         }
 
         .banner_text_second {
@@ -156,16 +156,20 @@
 
         .book_buuton {
             color: #f94b00;
-            background-color: #fff;
+            backgroun-color: #fff;
             font-family: "Noto Sans", sans-serif !important;
-
+background-color: #fff;
             letter-spacing: normal;
             font-weight: 800;
             padding: 0.5rem 3rem;
             border-radius: 20px;
             cursor: pointer;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             text-transform: uppercase;
+        }
+        .book_buuton:hover {
+            background-color:#f94b00 ;
+            color: #fff;
         }
 
         .banner_bottom_strip {
@@ -229,6 +233,7 @@
             font-family: 'Lobster', sans-serif !important;
             width: 100%;
             text-align: center;
+            z-index: 999;
         }
 
         .heading_section {
@@ -282,9 +287,9 @@
             background: #fff;
             width: 65%;
             color: #000;
-            border: 1px solid #f94b00b1;
+            border: 3px solid #f94b00b1;
             right: 0;
-            border-radius: 40px 0 0 40px;
+            border-radius: 0px 0 0 40px;
             padding: 1rem;
             font-size: 1.3rem;
             border-bottom: 0;
@@ -392,7 +397,7 @@
             width: 100%;
             display: flex;
             /* background: linear-gradient(45deg, #ed7ab7, hsl(330, 86%, 91%));       */
-            flex-direction: column-reverse;
+            flex-direction: column;
             align-items: center;
             gap: 1rem;
             padding: 2rem 0rem;
@@ -523,6 +528,157 @@
             height: auto;
             border-radius: 10px;
         }
+        .mobile_slider_wrapper{
+            display: none;
+        }
+        @media(max-width:1024px){
+            .bannerImage_wrapper {
+                width: 40%;
+            }
+            .banner_text_container{
+                width: 60%;
+            }
+            .banner-text_section {
+                font-size: 3rem;
+            }
+            .banner_text_second{
+                font-size: 1.5rem;
+            }
+            .bannerimage_container {
+                width: 85%;
+            }
+            .sevice_decoration_container img {
+                width: 150px;
+            }
+            .service_description_section{
+            width: 90%;
+            }
+            .indi_service_image_container img {
+    width: 140px;
+    height: auto;
+}
+.indi_service_image_container {
+    height: 240px;
+    width: 229px;
+}
+.service_name_container {
+
+    border: 2px solid #f94b00b1;
+    border-radius: 0 0 0 26px;
+    padding: 0.5rem;
+    font-size: 1rem;
+border-bottom: 0;
+border-right: 0;
+
+}
+.book_buuton {
+    font-size: 1rem;
+}
+.inner_content{
+    width: 90%;
+}
+.first_section{
+    width: 80%;
+}
+ 
+
+
+        }
+        @media (max-width:767px) {
+    .second_section img {
+        width: 100%;
+    }
+    .banner_contianer{
+        flex-direction: column;
+    }
+    .bannerImage_wrapper {
+                width: 100%;
+                height: 10%;
+                display: none;
+            }
+            .banner_text_container{
+                width: 100%;
+            }
+            .inner_container {
+    width: 100%;
+ }
+ .book_buuton{
+    font-size: 0.9rem !important;
+ }
+ .book_image_main_wrapper{
+    background-position: left !important;
+ }
+ .banner_contianer{
+    height: 60vh;
+ }
+.slider-wrapper{
+    display: none;
+}
+.mobile_slider_wrapper{
+
+    display: flex;
+            transition: transform 0.5s ease;
+}
+.mobile_slider_wrapper{
+    animation: slide 16s infinite;
+            margin: 1rem 0rem;
+}
+.slide img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+@keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            11% {
+                transform: translateX(0);
+            }
+
+            22% {
+                transform: translateX(-100%);
+            }
+
+            33% {
+                transform: translateX(-100%);
+            }
+
+            44% {
+                transform: translateX(-200%);
+            }
+
+            55% {
+                transform: translateX(-200%);
+            }
+
+            66% {
+                transform: translateX(-300%);
+            } 
+             77% {
+                transform: translateX(-300%);
+            } 
+                  99% {
+                transform: translateX(0%);
+            }    
+                 100% {
+                transform: translateX(0);
+            }
+        }
+        .slideBackground_Image img {
+            width: 50%;
+        }
+        .slider_main-wrapper {
+            display: flex;
+            align-items: center;
+            background-size: 100px;
+        }
+        .butterflied_image{
+            width: 50px !important;
+        }
+
+ }
     </style>
 
     <div class="banner_contianer">
@@ -649,8 +805,9 @@
 
     </div>
     <div class="choose_main_wrapper">
-        <div class="heading_section">Why Choose Us?</div>
         <div class="choose_main_container">
+            <div class="heading_section">Why Choose Us?</div>
+
             <div class="first_section">
                 At Shubh Beauty, our team is dedicated to providing you with the best med spa experience in Lake
                 Charles. With our range of services and convenient location inside Walmart, we are your one-stop
@@ -685,14 +842,13 @@
                     <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/decorationimage_prev_ui_1_wCV.png" width="100%" alt="">
                 </div>
                 <div class="" style="display: flex;justify-content: end;width: 100%;">
-                    <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/download_fh2.png" width="100px" alt="">
+                    <img class="butterflied_image" src="https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/download_fh2.png" width="100px" alt="">
                 </div>
             </div>
 
             <div class="slider-container">
 
                 <div class="slider-wrapper">
-                    <!-- Slides -->
                     <div class="slide">
                         <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img6.jpg"
                             alt="Image 1">
@@ -719,8 +875,6 @@
                         <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img1.jpg"
                             alt="Image 1">
                     </div>
-
-                    <!-- Add more slides as needed -->
                     <div class="slide">
                         <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img6.jpg"
                             alt="Image 1">
@@ -732,6 +886,36 @@
 
                         <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img1.jpg"
                             alt="Image 1">
+                    </div>
+                </div>
+                <div class="mobile_slider_wrapper">
+                    <div class="slide">
+                        <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img6.jpg"
+                            alt="Image 1">
+
+                        <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/h.jpg"
+                            alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img2.jpg"
+                            alt="Image 1">
+
+                        <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/h.jpg"
+                            alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img6.jpg"
+                            alt="Image 1">
+                        <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/h.jpg"
+                            alt="Image 1">
+
+                    </div>
+                    <div class="slide">
+                        <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/img6.jpg"
+                            alt="Image 1">
+                        <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_fba50628d39234a7e4953420c3d9300b28a7572e2ffe6cc915b260dbcc41d708/images/h.jpg"
+                            alt="Image 1">
+
                     </div>
                 </div>
             </div>
