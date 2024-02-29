@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyebrows</title>
+
+</head>
+<body>
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Didact+Gothic&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .banner_section{
+        background: url(https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/a31d4085574e47ca83f7504dd13d4b5f/1/5feFb8zhrk/browHero.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 44rem;
+        position: relative;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .top_strip{
+        width: 100%;
+        background-color: #ffc8a6;
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        color: #000;
+        padding: 0.5rem 0;
+        font-family: "Aleo", serif  !important;
+        font-weight: 700;
+        color: #231f22;
+    }
+    .banner_overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #633313b2;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        z-index: 1;
+    
+    }
+    .banner_content_container{
+        margin-top: 2.5rem;
+        width: 90%;
+        max-width: 1500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        z-index: 8;
+    }
+    .banner_heading{
+        font-family: "Aleo", serif  !important;
+        font-size: 4rem;
+        font-weight: 700;
+        text-shadow: 3px 1px 2px #f94b00 ;
+    }
+    .banner_text_para{
+        font-size: 1.5rem;
+        font-family: "Didact Gothic", sans-serif !important;
+    }
+    .button_tag{
+       font-weight: 700;
+        background-color:#f94b00 ;
+        padding: 0.9rem 5rem;
+        border-radius: 20px;
+        font-size: 1.5rem;
+        font-family: "Raleway", sans-serif !important;
+        cursor: pointer;
+        color: #fff;
+        }
+        .button_tag:hover{
+            background-color: #fff;
+            color: #f94b00;
+            border: 1px solid #f94b00;
+        }
+        .banner_floating_card{
+            position: absolute;
+            bottom: -27%;
+            box-shadow: 0px 0px 9px 1px #0000004f;
+                        background-color: #fff;
+            width: 90%;
+            max-width: 1200px;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0rem;
+            text-align: center;
+            z-index: 999;
+            border-radius: 20px;
+            padding: 1rem;
+        }
+.banner_card_heading{
+    font-size: 2.5rem;
+    font-family: "Aleo", serif  !important;
+    font-weight: 700;
+}
+.banner_card_para{
+    font-size: 1.5rem;
+    font-family: "Didact Gothic", sans-serif !important;
+  font-weight: 400;
+}
+.brow_desc_wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 18rem;
+    margin-bottom: 8rem;
+}
+.brow_desc_container{
+    width: 95%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0rem;
+}
+.desc_image_container{
+    width: 40%;
+    height: 100%;
+}
+.desc_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.desc_text_container{
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: start;
+
+}
+.third_section_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(https://firstsight.design/cherie/beauty/wp-content/uploads/2023/04/cheroooo-scaled.jpg) ;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 3rem;
+    background-attachment: fixed;
+    position: relative;
+}
+.overlay_wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#ffc8a66f;
+    z-index: 1;
+}
+.third_container{
+    width: 90%;
+    max-width: 1500px;
+    box-shadow: 0px 0px 9px 1px #0000004f;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem ;
+    border-radius: 1rem;
+    height: 250px;
+    justify-content: center;
+    z-index: 999;
+}
+.experience_section_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.exp_container{
+    width: 90%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 8rem 0rem;
+    text-align: start;
+}
+.brows_pricing_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/h2sliderimg1.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+.price_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #633313b2;
+    z-index: 1;
+}
+.brows_pricing_container{
+    width: 90%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    z-index: 99;
+}
+.card{
+    width: 30%;
+    height: 150px;
+    box-shadow: 0px 0px 9px 1px #0000004f;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.card_heading{
+    font-size: 2rem;
+    font-family: "Aleo", serif  !important;
+    color: #f94b00;
+    font-weight: 600;
+text-align: center;
+}
+.card_price{
+    font-size: 1.8rem;
+    font-family: "Didact Gothic", sans-serif !important;
+    font-weight: 800;
+
+}
+.schedule_wrapper{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+background: url(https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/mainhomerevimg1.jpg);
+background-repeat: no-repeat;
+background-position: right;
+background-size: cover;
+margin-top: 1rem;
+height: 600px;
+width: 100%;
+background-attachment: fixed;
+position: relative;
+
+}
+.schedule_container{
+    background:linear-gradient(90deg,#ffc8a6,#ffc8a6);
+    width: 50%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    height: 100%;
+    z-index: 999;
+    height: 100%;
+}
+.schedule_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #633313b2;
+
+}
+@media(max-width:1024px){
+    .banner_heading{
+        font-size: 3rem;
+    }
+    .banner_floating_card{
+        bottom: -37%;
+    }
+    .image_banner{
+        width: 80%;
+    }
+    .brow_desc_container{
+        flex-direction: column;
+    }
+    .desc_image_container{
+width: 90%;
+    }
+    .desc_text_container{
+        width: 90%;
+    }
+    .banner_card_heading{
+        font-size: 2rem;
+    }
+    .third_container {
+        padding: 1.5rem;
+    }
+    .card_heading {
+    font-size: 1.5rem;
+}
+.brows_pricing_container{
+    padding: 3rem 0rem;
+    width: 97%;
+}
+.button_tag{
+    padding: 0.9rem 3rem;
+}
+
+.schedule_container{
+    width: 60%;
+}
+.schedule_wrapper{
+    background-position: center;
+}
+}
+ @media (max-width:767px){
+    .banner_heading{
+        font-size: 2rem;
+    }
+    .banner_card_heading{
+        font-size: 1.5rem;
+    }
+    .banner_card_para {
+        font-size: 1rem;
+    }
+    .banner_text_para{
+        font-size: 1rem;
+    }
+    .button_tag {
+    font-weight: 700;
+    background-color: #f94b00;
+    padding: 0.9rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif !important;
+    cursor: pointer;
+    color: #fff;
+}
+.third_container{
+    width: 79%;
+}
+.desc_text_container{
+    text-align: justify;
+}
+.banner_card_para{
+    text-align: justify;
+}
+.banner_card_heading{
+    font-size: 1.1rem;
+}
+.exp_container{
+    flex-direction: column;
+    width: 100%;
+}
+.brows_pricing_container{
+    flex-direction: column;
+}
+.card{
+    width: 90%;
+}
+.card_heading {
+    font-size: 1.3rem;
+}
+
+.schedule_container{
+    width: 100%;
+    padding: 0.5rem;
+    text-align: justify;
+}
+.schedule_wrapper{
+    height: 300px;
+}
+
+ }
+  </style>
+  <div class="banner_section">
+    <div class="top_strip">OUR BROW SERVICES</div>
+<div class="banner_overlay">
+    <div class="banner_content_container">
+
+        <div class="banner_heading">Enhance Your Natural Beauty</div>
+        <div class="banner_text_para">Welcome to Shubh Beauty, the premier med spa conveniently located inside Walmart in Lake Charles, LA. We take pride in offering a wide range of exceptional beauty services, including our luxurious brow services. Our expert team is dedicated to helping you achieve the perfect brow look that complements your unique features. Learn more!</div>
+        <div class="">
+            <img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/f83a3cb7117c42008b0d5860275d16f1/1/4SoifmQp45JMgBnHmBMTz/trustbadges.png" class="image_banner" alt="">
+        </div>
+        <div class="button_tag">Consult With Our Brow Experts</div>
+    </div>
+</div>
+<div class="banner_floating_card">
+    <div class="star_image">
+        <img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/e6a3a500867f41cb9bc7e2237576494a/1/4SoifmQp45JMgBnHdn6QC/starIcon.png" alt="">
+    </div>
+    <div class="banner_card_heading">Perfectly Shaped Brows</div>
+    <div class="banner_card_para">At Shubh Beauty, we understand the importance of beautifully shaped brows in framing your face and enhancing your natural beauty. Our highly skilled aestheticians specialize in brow shaping, using precise techniques to create symmetrical and well-defined brows tailored to your facial structure. Whether you prefer an arch or a more natural shape, we will work with you to achieve your desired look.</div>
+</div>
+</div>
+<div class="brow_desc_wrapper">
+    <div class="brow_desc_container">
+        <div class="desc_image_container">
+            <img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/a908864e0a1b4d41bca31f981104d23f/1/4SoifmQp45JMgBnHm9g4L/browImg1.jpg" class="desc_image" alt="">
+        </div>
+        <div class="desc_text_container">
+            <div class="banner_card_heading">Achieve The Perfect Brow Look With Microblading</div>
+            <div class="banner_card_para">If you're tired of filling in your brows every day or have sparse brows, our microblading service is the perfect solution. Using microblading techniques, our experts will tattoo natural-looking hair strokes onto your brows, creating fuller and more defined brows that last. Say goodbye to smudging or fading brow makeup and wake up to effortlessly flawless brows every day.</div>
+            <div class="button_tag"> Book An Appointment</div>
+        </div>
+    </div>
+</div>
+<div class="third_section_wrapper">
+    <div class="third_container">
+        <div class="banner_card_heading">Flawless Brows With Expert Brow Tinting Services</div>
+        <div class="banner_card_para">Enhance the color and definition of your brows with our professional brow tinting services. Our skilled technicians use high-quality tinting products to match your brow color with your hair and skin tone, resulting in natural-looking and well-defined brows. Say hello to bold and flawless brows that require minimal maintenance.</div>
+    </div>
+    <div class="overlay_wrapper"></div>
+</div>
+<div class="experience_section_wrapper">
+    <div class="exp_container">
+  
+        <div class="desc_text_container">
+            <div class="banner_card_heading">Experience Professional Brow Waxing</div>
+            <div class="banner_card_para">Say goodbye to unwanted hair and achieve a clean and well-groomed brow line with our expert brow waxing services. Our aestheticians use gentle and precise techniques to remove unwanted hair, leaving you with perfectly shaped and arch-defining brows.</div>
+        </div>
+        <div class="exp_image_container">
+            <img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/cbdca42c23ff44bb8c3e5581cc29eaca/1/4SoifmQp45JMgBnHm9g4L/browImg2.jpg" class="desc_image" alt="">
+        </div>
+    </div>
+</div>
+<div class="brows_pricing_wrapper">
+    <div class="brows_pricing_container">
+        <div class="card">
+            <div class="card_heading">Eyebrow Shaping</div>
+            <div class="card_price">$12 <span style="color: #f94b00;">+</span></div>
+        </div>
+        <div class="card">
+            <div class="card_heading">Eyebrow Tinting/Henna</div>
+            <div class="card_price">$12<span style="color: #f94b00;">+</span></div>
+        </div>
+        <div class="card">
+            <div class="card_heading">Eyebrow Lamination</div>
+            <div class="card_price">$12<span style="color: #f94b00;">+</span></div>
+        </div>    </div>
+        <div class="price_overlay"></div>
+</div>
+<div class="schedule_wrapper">
+    <div class="schedule_container">
+        <div class="banner_text_para">
+            Visit us today at Shubh Beauty to experience our exceptional brow services. Book your appointment now and let our skilled professionals transform and enhance your brows, helping you achieve your desired look effortlessly. You deserve the best, and we are here to make it happen.
+        </div>
+        <div class="button_tag">Schedule An Appointment</div>
+    </div>
+    <div class="schedule_overlay"></div>
+</div>
+</body>
+</html>
