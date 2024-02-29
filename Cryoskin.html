@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyebrows</title>
+
+</head>
+<body>
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Didact+Gothic&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .banner_section{
+        background: url(https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/dsc_4561scaled.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 44rem;
+        position: relative;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .top_strip{
+        width: 100%;
+        background-color: #ffc8a6;
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        color: #000;
+        padding: 0.5rem 0;
+        font-family: "Aleo", serif  !important;
+        font-weight: 700;
+        color: #231f22;
+    }
+    .banner_overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #633313b2;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        z-index: 1;
+    
+    }
+    .banner_content_container{
+        margin-top: 5rem;
+        width: 90%;
+        max-width: 1500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        z-index: 8;
+    }
+    .banner_heading{
+        font-family: "Aleo", serif  !important;
+        font-size: 3rem;
+        font-weight: 700;
+        text-shadow: 3px 1px 2px #f94b00 ;
+    }
+    .banner_text_para{
+        font-size: 1.1rem;
+        font-family: "Didact Gothic", sans-serif !important;
+    }
+    .image_banner{
+        width: 80%;
+    }
+    .button_tag{
+       font-weight: 700;
+        background-color:#f94b00 ;
+        padding: 0.9rem 5rem;
+        border-radius: 20px;
+        font-size: 1.5rem;
+        font-family: "Raleway", sans-serif !important;
+        cursor: pointer;
+        color: #fff;
+        }
+        .button_tag:hover{
+            background-color: #fff;
+            color: #f94b00;
+            border: 1px solid #f94b00;
+        }
+        .banner_floating_card{
+            position: absolute;
+            bottom: -35%;
+            box-shadow: 0px 0px 9px 1px #0000004f;
+                        background-color: #fff;
+            width: 90%;
+            max-width: 1200px;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0rem;
+            text-align: center;
+            z-index: 999;
+            border-radius: 20px;
+            padding: 1rem;
+        }
+.banner_card_heading{
+    font-size: 2.5rem;
+    font-family: "Aleo", serif  !important;
+    font-weight: 700;
+}
+.banner_card_para{
+    font-size: 1.5rem;
+    font-family: "Didact Gothic", sans-serif !important;
+  font-weight: 400;
+}
+.brow_desc_wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 18rem;
+}
+.brow-des2{
+    margin-top: 5rem !important;
+}
+.brow_desc_container{
+    width: 95%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0rem;
+}
+.desc_image_container{
+    width: 40%;
+    height: 100%;
+}
+.desc_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.desc_text_container{
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: start;
+
+}
+.third_section_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/a31d4085574e47ca83f7504dd13d4b5f/1/5feFb8zhrk/browHero.jpg) ;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 3rem;
+    background-attachment: fixed;
+    position: relative;
+}
+.overlay_wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#ffc8a66f;
+    z-index: 1;
+}
+.third_container{
+    width: 90%;
+    max-width: 1500px;
+    box-shadow: 0px 0px 9px 1px #0000004f;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem ;
+    border-radius: 1rem;
+    height: 250px;
+    justify-content: center;
+    z-index: 999;
+}
+.experience_section_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.exp_container{
+    width: 90%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 8rem 0rem;
+    text-align: start;
+}
+.brows_pricing_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+.price_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #633313;
+    z-index: 1;
+}
+.brows_pricing_container{
+    width: 90%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    z-index: 99;
+}
+.card{
+    width: 40%;
+    height: 250px;
+    box-shadow: 0px 0px 9px 1px #0000004f;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.card_heading{
+    font-size: 1.5rem;
+    font-family: "Aleo", serif  !important;
+    color: #f94b00;
+    font-weight: 600;
+text-align: center;
+}
+.card_price{
+    font-size: 1.8rem;
+    font-family: "Didact Gothic", sans-serif !important;
+    font-weight: 800;
+
+}
+.schedule_wrapper{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+background: url(https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/mainhomerevimg1.jpg);
+background-repeat: no-repeat;
+background-position: right;
+background-size: cover;
+margin-top: 1rem;
+height: 600px;
+width: 100%;
+background-attachment: fixed;
+position: relative;
+
+}
+.schedule_container{
+    background:linear-gradient(90deg,#ffc8a6,#ffc8a6);
+    width: 50%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    height: 100%;
+    z-index: 999;
+    height: 100%;
+}
+.schedule_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #633313b2;
+
+}
+@media(max-width:1024px){
+    .card{
+        width: 46%;
+    }
+    .card_price {
+        font-size: 1.3rem;
+    }
+    .brow_desc_wrapper{
+        margin-bottom: 0;
+    }
+    .banner_heading{
+        font-size: 2.5rem;
+    }
+    .banner_floating_card{
+        bottom: -30%;
+    }
+    .image_banner{
+        width: 80%;
+    }
+    .brow_desc_container{
+        flex-direction: column;
+    }
+    .desc_image_container{
+width: 90%;
+    }
+    .desc_text_container{
+        width: 90%;
+    }
+    .banner_card_heading{
+        font-size: 1.5rem;
+    }
+    .banner_card_para{
+        font-size: 1.3rem;
+    }
+    .third_container {
+        padding: 1.5rem;
+    }
+    .card_heading {
+    font-size: 1.3rem;
+}
+.brows_pricing_container{
+    padding: 3rem 0rem;
+    width: 100%;
+}
+.button_tag{
+    padding: 0.9rem 3rem;
+}
+
+.schedule_container{
+    width: 60%;
+}
+.schedule_wrapper{
+    background-position: center;
+}
+}
+ @media (max-width:767px){
+
+    .card_price{
+        font-size: 1rem;
+    }
+    .banner_floating_card {
+        bottom: -42%;
+    }
+    .banner_content_container {
+        margin-top: 5rem;
+    }
+    .banner_heading{
+        font-size: 1.5rem;
+    }
+    .banner_card_heading{
+        font-size: 1.5rem;
+    }
+    .banner_card_para {
+        font-size: 0.85rem;
+    }
+    .banner_text_para{
+        font-size: 1rem;
+    }
+    .button_tag {
+    font-weight: 700;
+    background-color: #f94b00;
+    padding: 0.9rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif !important;
+    cursor: pointer;
+    color: #fff;
+}
+.brow_desc_wrapper{
+    margin-bottom: 0;
+}
+.third_container{
+    width: 79%;
+}
+.desc_text_container{
+    text-align: justify;
+}
+.banner_card_para{
+    text-align: justify;
+}
+.banner_card_heading{
+    font-size: 1.1rem;
+}
+.exp_container{
+    flex-direction: column;
+    width: 100%;
+}
+.brows_pricing_container{
+    flex-direction: column;
+}
+.card{
+    width: 98%;
+}
+.card_heading {
+    font-size: 1.3rem;
+}
+
+.schedule_container{
+    width: 100%;
+    padding: 0.5rem;
+    text-align: justify;
+}
+.schedule_wrapper{
+    height: 400px;
+}
+.brow-des2{
+    margin-top: 1rem !important;
+}
+ }
+  </style>
+  <div class="banner_section">
+    <div class="top_strip">
+        INTRODUCING CRYOSKIN SERVICES AT SHUBH BEAUTY IN LAKE CHARLES
+    </div>
+<div class="banner_overlay">
+    <div class="banner_content_container">
+
+        <div class="banner_heading">Your Destination For Ultimate Rejuvination</div>
+        <div class="banner_text_para">With our busy and often hectic lifestyles, it can be challenging to find time for self-care and pampering. However, at Shubh Beauty, we believe that taking care of oneself should be an essential part of our daily routine. This is why we are excited to offer Cryoskin Services at our Lake Charles location inside of Walmart. Say goodbye to traditional spa treatments and hello to the cutting-edge technology of Cryoskin. Book an appointment today!.</div>
+        <div class="">
+            <img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/f83a3cb7117c42008b0d5860275d16f1/1/4SoifmQp45JMgBnHmBMTz/trustbadges.png" class="image_banner" alt="">
+        </div>
+        <div class="button_tag">Book An Appointment</div>
+    </div>
+</div>
+<div class="banner_floating_card">
+    <div class="star_image">
+        <img src="https://static.mywebsites360.com/b5b5c692f89944a78f62ace6f7cdc853/i/e6a3a500867f41cb9bc7e2237576494a/1/4SoifmQp45JMgBnHdn6QC/starIcon.png" alt="">
+    </div>
+    <div class="banner_card_heading">Experience The Ultimate Relaxation With Cryoskin Facials At Shubh Beauty</div>
+    <div class="banner_card_para">Pamper your skin with our rejuvenating Cryoskin facial services. Using a combination of cold temperature and pressure, our Cryoskin facials help stimulate collagen production, reduce pore size, and improve overall skin texture and tone. Reap the benefits of this non-invasive and painless treatment, with no downtime, in the comfort of our tranquil spa environment.</div>
+</div>
+</div>
+<div class="brow_desc_wrapper" style="background-color: #e7e6e5 !important;">
+    <div class="brow_desc_container">
+        <div class="desc_image_container">
+            <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/10scaled.jpg" class="desc_image" alt="">
+        </div>
+        <div class="desc_text_container">
+            <div class="banner_card_heading">
+                Transform Your Body With Cryoskin Therapy At Shubh Beauty</div>
+            <div class="banner_card_para">Looking for a more toned and sculpted body without going under the knife? Look no further than our Cryoskin therapy services. Our advanced technology targets stubborn areas of cellulite and excess fat, giving you a smoother and more defined silhouette. Let our skilled technicians tailor a personalized treatment plan to help you achieve your body goals.</div>
+            <div class="button_tag"> Book An Appointment</div>
+        </div>
+    </div>
+</div>
+<div class="brow_desc_wrapper brow-des2" >
+    <div class="brow_desc_container">
+        <div class="desc_text_container">
+            <div class="banner_card_heading">
+                Cryoskin Facial</div>
+            <div class="banner_card_para">Elevate your skincare routine with our revolutionary Cryoskin facial. This cutting-edge treatment harnesses the power of cryotherapy to rejuvenate your skin, offering a non-surgical solution to achieving a more youthful and radiant complexion. By gently cooling the skin, Cryoskin facials stimulate increased blood flow and collagen production, effectively reducing the appearance of fine lines and wrinkles, and improving skin elasticity. Experience a visible transformation with each session, leaving your skin feeling tighter, brighter, and unmistakably youthful.</div>
+            <div class="button_tag"> Schedule An Appointment</div>
+        </div>
+        <div class="desc_image_container">
+            <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/1.jpg" class="desc_image" alt="">
+        </div>
+    </div>
+</div>
+<div class="brow_desc_wrapper brow-des2" style="background-color: #e0e0e0 !important;" >
+    <div class="brow_desc_container">
+        <div class="desc_image_container">
+            <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/2.jpg" class="desc_image" alt="">
+        </div>
+        <div class="desc_text_container">
+            <div class="banner_card_heading">
+                Cryoskin Slimming</div>
+            <div class="banner_card_para">Introducing Cryoskin slimming – a breakthrough in non-invasive body contouring. This advanced treatment targets and cools fat cells in problem areas, causing them to naturally be eliminated from the body. Perfect for those looking to reduce fat in stubborn areas without the downtime and risks associated with surgery. Each session is tailored to your body's unique shape, focusing on areas like the abdomen, thighs, and arms to sculpt and define. With Cryoskin slimming, achieving your body goals is easier and more accessible than ever. Say hello to a slimmer, more toned you.</div>
+            <div class="button_tag"> Schedule An Appointment</div>
+        </div>
+    </div>
+</div>
+<div class="brow_desc_wrapper brow-des2" >
+    <div class="brow_desc_container">
+        <div class="desc_text_container">
+            <div class="banner_card_heading">
+                Cryoskin Toning</div>
+            <div class="banner_card_para">Cryoskin toning is the ultimate solution for those looking to improve skin texture and firmness. This innovative treatment applies cold therapy to tighten loose skin, reduce the appearance of cellulite, and enhance overall skin tone. Ideal for any area of the body that could benefit from a tighter appearance, Cryoskin toning is effective, painless, and requires no downtime. Whether you're looking to rejuvenate your face, stomach, arms, or legs, our expert technicians will customize your treatment to meet your specific needs and help you achieve visibly firmer skin.</div>
+            <div class="button_tag"> Schedule An Appointment</div>
+        </div>
+        <div class="desc_image_container">
+            <img src="https://ebntadr.stripocdn.email/content/guids/CABINET_d106d9366616dba7df09fe81f37d65c736c1cf47f5a4f07dc56aab9ec3915e49/images/3.jpg" class="desc_image" alt="">
+        </div>
+    </div>
+</div>
+<div class="third_section_wrapper">
+    <div class="third_container">
+        <div class="banner_card_heading">Why Choose Shubh Beauty For Your Cryoskin Services?
+        </div>
+        <div class="banner_card_para">At Shubh Beauty, we pride ourselves on providing top-quality services using advanced technology. Our trained and certified technicians will ensure that your Cryoskin treatment is conducted safely and effectively. We also understand the importance of affordability, which is why we offer competitive pricing and package deals.</div>
+    </div>
+    <div class="overlay_wrapper"></div>
+</div>
+
+<div class="brows_pricing_wrapper">
+    <div class="brows_pricing_container">
+        <div class="card">
+            <div class="card_heading">CRYO SLIMMING & LIFTNG</div>
+            <div class="card_price">Single - $299 </div>
+            <div class="card_price">5 Pack - $1,250 </div>
+            <div class="card_price">5 Pack Membership Pack - $1,125 </div>
+        </div>
+        <div class="card">
+            <div class="card_heading">CRYO SLIMMING PLUS</div>
+            <div class="card_price">Single - $399</div>
+            <div class="card_price">5 Pack - $1,800</div>
+        </div>
+       
+     </div>
+     <div class="brows_pricing_container">
+        <div class="card">
+            <div class="card_heading">CRYO LIFTING FACIAL</div>
+            <div class="card_price">Single - $199 </div>
+            <div class="card_price">5 Pack - $799 </div>
+            <div class="card_price">5 Pack Membership Pack - $745 </div>
+        </div>
+        <div class="card">
+            <div class="card_heading">CRYO GLACIAL FACIAL & RED LIGHT THERAPY</div>
+            <div class="card_price">Single - $89</div>
+            <div class="card_price">5 Pack - $399</div>
+            <div class="card_price">5 Pack Membership Pack - $339</div>
+        </div>
+        
+     </div>
+        <div class="price_overlay"></div>
+</div>
+<div class="schedule_wrapper">
+    <div class="schedule_container">
+        <div class="banner_text_para">
+            Skip the hassle of making multiple stops for your beauty needs and visit us at our location inside Walmart. Our convenient location allows you to maximize your time and get all your shopping done in one place. With ample parking and a welcoming atmosphere, we guarantee a stress-free experience.
+
+            Join the growing number of satisfied clients who have experienced the rejuvenating benefits of cryoskin services at Shubh Beauty. Book your appointment today and let us help you look and feel your best. Trust us, your body and skin will thank you.
+        </div>
+        <div class="button_tag">Schedule An Appointment</div>
+    </div>
+    <div class="schedule_overlay"></div>
+</div>
+</body>
+</html>
